@@ -46,10 +46,10 @@ ATR_LEN      = 14
 ATR_MULT_SL  = 2.0          # SL = ATR * this
 ATR_MULT_TP  = 4.0          # TP = ATR * this  (≈ 2R by default)
 
-SYMBOL       = "AUDUSD=X" #AUDUSD=X" #"USDCHF=X"  GBPUSD=X  # e.g. "EURUSD=X", "USDJPY=X", "XAUUSD=X", "BTC-USD", GBPJPY=X 
-START        = "2023-10-01" # pull ~1-2 years; adjust as needed
-END         = "2024-10-01" 
-INTERVAL     = "4h"         # 4-hour candles
+SYMBOL       = "AAPL" #AUDUSD=X" #"USDCHF=X"  GBPUSD=X  # e.g. "EURUSD=X", "USDJPY=X", "XAUUSD=X", "BTC-USD", GBPJPY=X 
+START        = "2023-01-01" # pull ~1-2 years; adjust as needed
+END         = "2024-11-27" 
+INTERVAL     = "1d"         # 4-hour candles
 CASH         = 1000000
 COMMISSION   = 0.0002      # 0.02%
 df = fetch_data(symbol=SYMBOL, start=START, end=END, interval=INTERVAL)
